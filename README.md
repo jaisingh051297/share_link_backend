@@ -2,8 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### dependencies Needed to rum react App.
+1. "@chakra-ui/react": "^2.6.0",
+2. "@testing-library/jest-dom": "^5.16.5",
+3. "@testing-library/react": "^13.4.0",
+4. "@testing-library/user-event": "^13.5.0",
+5. "axios": "^1.3.6",
+6. "react": "^18.2.0",
+7. "react-dom": "^18.2.0",
+8. "react-scripts": "5.0.1",
+9. "web-vitals": "^2.1.4"
 
+## Available Scripts
 In the project directory, you can run:
 
 ### `npm start`
@@ -67,3 +77,17 @@ You will now enter the firebase tools shell and will be prompted with a sequence
 Just run the following command to deploy your app:
 
 ### `firebase deploy`
+
+
+### challenges faced.
+1. Connecting to backend hosted api.
+
+### Additional features can be added.
+1. Next,React and typescript with proper types checking.
+2. Adding login and logout feature with proper authentication.
+3. Global state Management using Redux.
+4. Shareable feature more user interactive.
+5. UI can be more user friendaly.
+
+
+
