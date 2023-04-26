@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, Box } from '@chakra-ui/react';
+import theme from './config/theme';
+import UI from './components/UI';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+    <Box textAlign="center" fontSize="xl" m="3rem auto" p={5} maxW={700}>
+    <Box textAlign="center" fontWeight='bold' mb={10} h={{ base: '40px', md: '50px', lg: '70px' }} fontSize={{ base: '20px', md: '30px', lg: '35px' }} color='#F5A623' >
+      <h1>Short Link Generator</h1>
+    </Box>
+      <UI/>
+    </Box>
+    </ChakraProvider>
   );
 }
 
