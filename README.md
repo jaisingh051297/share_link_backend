@@ -29,42 +29,45 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Run the following command to create a build directory with a production build of your app:
 
-### `npm run build` fails to minify
+### `npm run build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Configuring Firebase
+
+Install Firebase CLI
+To host your site with Firebase Hosting, you need the Firebase command-line tool (CLI). Run the following npm command to install the CLI on your system globally:
+
+### `npm install -g firebase-tools`
+
+
+### Login to Firebase
+Make sure you're in the root directory of your React app and run the following command to login to firebase in your terminal:
+
+### `firebase login`
+
+If you're not logged in, you'll be asked to enter the credentials for your google account.
+
+
+### Initiate your project
+Now that you've got the firebase CLI configured, it's time to initialize firebase in your react app. Run the following command:
+
+### `firebase init`
+
+You will now enter the firebase tools shell and will be prompted with a sequence of questions and various configuration options. Let's go through these questions together step by step to achieve our desirable configuration.
+
+### Select - Hosting: Configure and deploy Firebase Hosting sites.
+
+### Select - Use an existing project
+
+### Select - Require options as per your need and Press Enter.
+
+### Deploy To Firebase
+Just run the following command to deploy your app:
+
+### `firebase deploy`
